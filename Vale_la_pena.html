@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: transparent;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+    .custom-player-container {
+      width: 300px;
+      padding: 10px;
+      border-radius: 10px;
+      background-color: #f0f0f0; /* Color de fondo por defecto */
+    }
+    .custom-player-container audio {
+      width: 100%;
+    }
+    .custom-player-container h3 {
+      text-align: center;
+      color: #333;
+    }
+    /* Estilos del reproductor */
+    audio::-webkit-media-controls-panel {
+      background-color: #7f8c8d; /* COLOR_DEL_REPRODUCTOR */
+      color: #fff;
+    }
+    audio::-webkit-media-controls-play-button,
+    audio::-webkit-media-controls-current-time-display,
+    audio::-webkit-media-controls-time-remaining-display {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+<div class="custom-player-container">
+  <h3>Tu Música</h3>
+  <audio controls>
+    <source src="https://drive.google.com/file/d/1NAl-BWr080SiiJfSb7c3UvBsckw2F9Yx/view?usp=drive_link" type="audio/mpeg">
+    Tu navegador no soporta el elemento de audio.
+  </audio>
+</div>
+
+</body>
+</html>
